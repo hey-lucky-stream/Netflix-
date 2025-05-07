@@ -2,22 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Page Iframe</title>
+    <title>Netflix</title>
     <style>
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
+            overflow: hidden;
         }
         iframe {
+            border: none;
             width: 100%;
             height: 100%;
-            border: none;
         }
-    </style>
+       .tg-button {
+    position: fixed;
+    bottom: 56px;
+    left: 80%;
+    transform: translateX(-60%);
+    padding: 8px 20px; /* smaller padding */
+    background-color: #0088cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 14px; /* smaller text */
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+   </style>
 </head>
 <body>
-    <iframe src="https://nflix.iptvbd.online" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"></iframe>
+
+<iframe src="https://nflix.iptvbd.online/"
+          sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation">
+  </iframe>
+
+<a class="tg-button" href="t.me/allrounder745" target="_blank">Join Telegram</a>
+
 </body>
 </html>
